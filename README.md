@@ -1,15 +1,12 @@
-Docker based Continuous Integration Containers
-=======================================
+# Docker based Continuous Integration Containers
 
-Pre-Requisites
--------------
+## Pre-Requisites
 
 - Docker (for Mac OSX / Windows / Docker)
 - Docker Compose
-- Clone the repository and checkout branch Feature_00_Jenkins
+- ***Clone the repository and checkout branch Feature_00_Jenkins***
 
-QuickStart
------------
+## QuickStart
 
 - To Start containers in the background
 
@@ -25,8 +22,7 @@ QuickStart
     $ docker-compose down
     ```
 
-The result of the compose is multi-fold
----------------------------------------
+## The result of the compose is multi-fold
 
 - Build Jenkins with Java8,Maven 3, Nginx Images
 - Build Nexus version 2.14.18-01 and configure with a jboss repo
@@ -35,8 +31,7 @@ The result of the compose is multi-fold
 - Mount docker volumes for persisting the changes done at container level
 - Configure nginx reverse-proxy with urls relative to localhost
 
-
-# CI Tools Demo
+## CI Tools Demo
 
 This GitHub repository contains Dockerfiles for running a set of Continuous Integration Tools with a single command. The diagram contains all tools used in the Docker containers[may not be up to date].
 
@@ -44,27 +39,27 @@ This GitHub repository contains Dockerfiles for running a set of Continuous Inte
 
 > This is not production ready, predominantly used for workshops and self-practises.
 > For production it is recommended to use  configuration management tool like Ansible to provision all docker containers and store passwords and keys in ansible vault.
-> See https://www.slideshare.net/MarcelBirkner/continuous-delivery-in-enterprise-environments-using-docker-ansible-and-jenkins
+> See <https://www.slideshare.net/MarcelBirkner/continuous-delivery-in-enterprise-environments-using-docker-ansible-and-jenkins>
 
-# Mac User
+## Mac User
 
-## With Docker Toolbox (incl. VirtualBox)
+### With Docker Toolbox (incl. VirtualBox)
 
 see [README-LEGACY.md](README-LEGACY.md)
 
-## With Docker Mac Native
+### With Docker Mac Native
 
 If you want to use new Docker Mac Native implementation without VirtualBox and Docker Toolbox, follow these steps:
 
-### Step 0 - Install Docker Mac Native
+#### Step 0 - Install Docker Mac Native
 
-Install Docker Mac Native (https://docs.docker.com/docker-for-mac/)[https://docs.docker.com/docker-for-mac/] and if you had Toolbox before, make sure to follow these steps here https://docs.docker.com/docker-for-mac/docker-toolbox/
+Install Docker Mac Native [https://docs.docker.com/docker-for-mac/](https://docs.docker.com/docker-for-mac/) and if you had Toolbox before, make sure to follow these steps here <https://docs.docker.com/docker-for-mac/docker-toolbox/>
 
 or install via __brew update__ & __brew cask install docker --force__ .
 
 If everything went fine, docker --version should give something like this (or a higher version number):
 
-```
+```bash
 $ docker --version
 Docker version 17.09.0-ce, build afdb6d4
 
@@ -74,15 +69,16 @@ docker-compose version 1.16.1, build 6d1ac21
 
 If there´s also docker-machine on your machine, don´t forget to do the mentioned steps [here](https://docs.docker.com/docker-for-mac/docker-toolbox/) to remove it.
 
-### Step 1 - Create needed osxfs mountpoints
+#### Step 1 - Create needed osxfs mountpoints
 
 Create folders (see [Issue 26](https://github.com/marcelbirkner/docker-ci-tool-stack/issues/26))
 
 Create a folder in the root directory "/" (Macintosh HD) and name it as __opt__
 
   Procedure:
-  * First __$ cd /__ into the root directory "/"
-  * Second __$ sudo mkdir /opt__
+
+* First __$ cd /__ into the root directory "/"
+* Second __$ sudo mkdir /opt__
 
 Then create the sub folders jenkins, postgres, gitlab in the "opt" folder.
 
@@ -96,11 +92,11 @@ Then configure these folders in Docker / Preferences / File Sharing:
 
 ![docker_preferences_file_sharing.png](screenshots/docker_preferences_file_sharing.png)
 
-### Step 2 - Configure correct path to docker binary
+#### Step 2 - Configure correct path to docker binary
 
 Clone Repository
 
-```
+```bash
 # Clone Repository and startup all docker container
 # Option A: clone via https
 git clone --recursive https://github.com/zealtechlab/docker_devops_stack.git
@@ -111,7 +107,7 @@ git clone --recursive https://github.com/zealtechlab/docker_devops_stack.git
 cd docker_devops_stack
 ```
 
-# Getting started
+## Getting started
 
 To get all docker containers up and running, in __docker-ci-tool-stack__ use:
 
@@ -119,7 +115,7 @@ To get all docker containers up and running, in __docker-ci-tool-stack__ use:
 docker-compose up
 ```
 
-## Some Important Notes on troubleshooting, follow instructions below 
+## Some Important Notes on troubleshooting, follow instructions below
 
 ### Sonarqube Issues
 
@@ -129,11 +125,13 @@ when sonarqube docker fails due to vm issue, execute the below command in you la
 #!/usr/bin/env bash
 $ sudo sysctl -w vm.max_map_count=262144
 ```
+
 When sonarqube fails due to db not reachable issue, simply restart the sonarqube container only, but make sure the sonardb is up and running already.
 
 ### Nexus Issues
 
 Nexus initial admin password can be found using below command in the nexus container shell
+
 ```bash
 cat nexus-data/admin.password
 ```
@@ -142,38 +140,46 @@ cat nexus-data/admin.password
 
 If you are rebuilding the entire stack make sure to __prune__ the __images__, __networks__ and __volumes__ after manually __removing__ the __containers__.
 
-# Selenium Grid
+## Selenium Grid
 
 You have start the selenium grid with a separate command, since the selenium container are
 not part of the default docker-compose.yml.
 
-```
+```bash
 docker-compose -f docker-compose-selenium.yml up
 ```
 
 ## Access Tools
 
+### Thru the attached nginx revers proxy
+
+| *Tool* | *Link* | *Credentials* |
+| ------------- | ------------- | ------------- |
+| Jenkins | <http://localhost:28080/> | no login required |
+| SonarQube | <http://localhost:29000/> | admin/admin |
+| Nexus | <http://localhost:28081/nexus> | admin/********** |
+
 #### With docker machine
 
 | *Tool* | *Link* | *Credentials* |
 | ------------- | ------------- | ------------- |
-| Jenkins | http://${docker-machine ip default}:18080/ | no login required |
-| SonarQube | http://${docker-machine ip default}:19000/ | admin/admin |
-| Nexus | http://${docker-machine ip default}:18081/nexus | admin/admin123 |
-| Selenium Grid | http://${docker-machine ip default}:4444/grid/console | no login required |
-| Conference App | http://${docker-machine ip default}:48080/currentSessions | no login required |
+| Jenkins | <http://localhost:18080/> | no login required |
+| SonarQube | <http://localhost:19000/> | admin/admin |
+| Nexus | <http://localhost:18081/nexus> | admin/********** |
+| Selenium Grid | <http://localhost:4444/grid/console> | no login required |
+| Conference App | <http://localhost:48080/currentSessions> | no login required |
 
 #### With Docker Mac Native
 
 | *Tool* | *Link* | *Credentials* |
 | ------------- | ------------- | ------------- |
-| Jenkins | http://localhost:18080/ | no login required |
-| SonarQube | http://localhost:19000/ | admin/admin |
-| Nexus | http://localhost:18081/ | admin/admin123 |
-| Selenium Grid | http://localhost:4444/grid/console | no login required |
-| Conference App | http://localhost:48080/currentSessions | no login required |
+| Jenkins | <http://localhost:18080/> | no login required |
+| SonarQube | <http://localhost:19000/> | admin/admin |
+| Nexus | <http://localhost:18081/> | admin/********** |
+| Selenium Grid | <http://localhost:4444/grid/console> | no login required |
+| Conference App | <http://localhost:48080/currentSessions> | no login required |
 
-## Screenshots
+## Overview
 
 Here is an overview of all tools:
 
