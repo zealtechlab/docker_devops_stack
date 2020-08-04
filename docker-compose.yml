@@ -21,6 +21,7 @@ services:
     hostname: nexus
     ports:
       - "18081:8081"
+      - "15000:5000"
     networks:
       - cicdnetwork
     volumes:
@@ -94,6 +95,12 @@ services:
       - "28080:8080"
       - "28081:8081"
       - "29000:9000"
+      - "20080:80"
+    healthcheck:
+        test: curl -f http://nginx-proxy
+        interval: 15s
+        timeout: 5s
+        retries: 3
     links:
       - jenkins
       - sonarqube
