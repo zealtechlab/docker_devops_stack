@@ -20,7 +20,7 @@
       &lt;server&gt;
          &lt;id&gt;nexus-release-repository&lt;/id&gt;
          &lt;username&gt;admin&lt;/username&gt;
-         &lt;password&gt;admin123&lt;/password&gt;
+         &lt;password&gt;password&lt;/password&gt;
       &lt;/server&gt;
    &lt;/servers&gt;
    &lt;profiles&gt;

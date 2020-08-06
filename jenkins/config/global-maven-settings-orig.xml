@@ -13,7 +13,7 @@
       <server>
       <id>nexus-release-repository</id>
       <username>admin</username>
-      <password>admin123</password>
+      <password>password</password>
       </server>
       </servers>
 
@@ -86,7 +86,7 @@
       <server>
       <id>nexus-release-repository</id>
       <username>admin</username>
-      <password>admin123</password>
+      <password>password</password>
       </server>
       </servers>
 
