@@ -13,5 +13,10 @@
         </hudson.tools.InstallSourceProperty>
       </properties>
     </hudson.tasks.Maven_-MavenInstallation>
+    <hudson.tasks.Maven_-MavenInstallation>
+      <name>maven</name>
+      <home>/usr/share/maven</home>
+      <properties/>
+    </hudson.tasks.Maven_-MavenInstallation>
   </installations>
 </hudson.tasks.Maven_-DescriptorImpl>
