@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <title>ZealTechLab Demo CI Pipeline Platform Stack</title>
+    <title>ZealTechLab Demo DevOps Platform tools Stack</title>
     <style>
         h1 {
     	     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -23,31 +24,83 @@
         }
     </style>
 </head>
+
 <body>
+
+ <!-- Load Font Awesome Icon Library -->
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
 <div style="text-align:center">
-    <h1>ZealTechLab Demo CI Pipeline Platfrom Stack</h1>
+    <h1>ZealTechLab Demo DevOps Platform tools Stack</h1>
     <div style="margin-top: 5em">
-        <div>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+            <h1>Platfrom Orchestration Tool</h1>
             <span>
                 <a href="http://localhost:28080" target="_blank"><img border="0" alt="jenkins" src="jenkins.png" width="100" height="150"></a>
             </span>
-            <span style="margin-left: 5em">
+            <span>
+                <a href="http://localhost:21080" target="_blank"><img border="0" alt="GitLab" src="GitLab.png" width="350" height="100"></a>
+            </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+            <h1>CI tools Stack</h1>
+            <span>
+                <a href="http://github.com" target="_blank"><img border="0" alt="GitHub" src="GitHub.jpeg" width="100" height="150"></a>
+            </span>
+            <span>
                 <a href="http://localhost:28081" target="_blank"><img border="0" alt="nexus" src="nexus.png" width="100" height="150"></a>
             </span>
-            <span style="margin-left: 5em">
-                <a href="http://localhost:29000" target="_blank"><img border="0" alt="sonar" src="sonar.png" width="350" height="100"></a>
+            <span>
+                <a href="http://localhost:29000" target="_blank"><img border="0" alt="sonarqube" src="sonar.png" width="350" height="100"></a>
+            </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:#bbb;">
+            <h1>CD tools Stack</h1>
+            <span>
+                <a href="http://localhost:59000" target="_blank"><img border="0" alt="portainer" src="portainer.png" width="350" height="100"></a>
+            </span>
+            <span>
+                <a href="http://docker.com" target="_blank"><img border="0" alt="docker" src="docker.png" width="350" height="100"></a>
+            </span>
+            <span>
+                <a href="http://ansible.com" target="_blank"><img border="0" alt="ansible" src="ansible.png" width="350" height="100"></a>
             </span>
         </div>
-        <div>
-            <p>The purpose of this project is to demonstrate a fully functional CI pipeline. </p>
-            <p>The tools used here are <b>Jenkins</b> for build and test a sample Java project, <b>Nexus</b> for storing the built artifacts and serving as a proxy for Maven dependencies, and <b>SonarQube</b> to scan and evaluate the source code quality.</p>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:#ccc;">
+            <h1>Devlopment Essentials tools Stack</h1>
+            <span>
+                <a href="http://git.com" target="_blank"><img border="0" alt="git" src="git.png" width="350" height="100"></a>
+            </span>
+            <span>
+                <a href="http://code.vscode.com" target="_blank"><img border="0" alt="vscode" src="vscode.png" width="350" height="100"></a>
+            </span>
+        </div>
+        </div>
+        <div class="row">
+
+            <div class="column" style="background-color:#ddd;">
+            <h1>CT tools Stack</h1>
+            <span>
+                <a href="http://localhost:4444/grid/console" target="_blank"><img border="0" alt="selenium grid" src="Selenium.jpeg" width="350" height="100"></a>
+            </span>
+            <span>
+                <a href="http://jmeter.com" target="_blank"><img border="0" alt="jmeter" src="jmeter.jpeg" width="350" height="100"></a>
+            </span>
+        </div>
         </div>
     </div>
 </div>
 <footer>
-    <span style="position:absolute; bottom:0; right:5px">
+        <p style="right:5px">The purpose of this tools stack is a demonstration of a fully functional CI pipeline.
         <a href="https://zealtechlab.co.in/" target="_blank"><img border="0" alt="ZTL" src="ZTL.png" width="200" height="200"></a>
-    </span>
+        </p>
 </footer>
 </body>
 </html>
