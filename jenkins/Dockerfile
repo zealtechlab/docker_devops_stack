@@ -10,7 +10,8 @@ RUN apt-get update \
 
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
-RUN sudo python3 get-pip.py && sudo pip install ansible
+RUN sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py\
+      && sudo python3 get-pip.py && sudo pip install ansible
 
 # getting the docker-cli
 # --- Attention: docker.sock needs to be mounted as volume in docker-compose.yml
