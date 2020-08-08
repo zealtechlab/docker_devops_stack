@@ -15,8 +15,8 @@ volumes:
   sonarqube_db:
   nexus_data:
   jenkins_data:
-  jenkins_home:
   jenkins_docker_certs:
+  jenkins_logs:
 
 services:
 
@@ -78,16 +78,18 @@ services:
         aliases:
           - jenkins
     volumes:
-      # - /var/run/docker.sock:/var/run/docker.sock
-      # - /snap/bin/docker:/usr/bin/docker
-      - jenkins_data:/var/lib/jenkins/
-      - jenkins_home:/var/jenkins_home
+      - ~:/home
+      - jenkins_data:/var/jenkins_home
+      - jenkins_docker_certs:/certs/client:ro
+      - jenkins_logs:/var/log/jenkins
     depends_on:
       - jenkins_docker_dind
       - nexus
       - sonarqube
     environment:
       - DOCKER_HOST=tcp://docker:2376
+      - DOCKER_CERT_PATH=/certs/client
+      - DOCKER_TLS_VERIFY=1
       - NEXUS_PORT=8081
       - SONAR_PORT=9000
       - SONAR_DB_PORT=5432
