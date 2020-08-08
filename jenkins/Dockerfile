@@ -15,7 +15,7 @@ LABEL Prabhakaran Sampath <prabhakaran@zealtechlab.co.in>
 
 USER root
 
-RUN apk add --no-cache curl tar bash procps git openssh less
+RUN apk add --no-cache curl tar bash procps git openssh less ca-certificates
 
 # Downloading and installing Maven
 ARG MAVEN_VERSION=3.6.3
@@ -101,6 +101,17 @@ RUN set -xe \
         /etc/ansible/hosts
 
 # CMD ["ansible", "--version"]
+
+#sonar Scanner - https://gist.github.com/henrist/302eeb29233ed45e8d2a119386fd394d
+RUN set -eux
+
+ARG SONAR_SCANNER_VERSION=4.4.0.2170
+
+RUN mkdir -p /opt \
+  && curl -fSL https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}.zip -o /opt/sonar-scanner.zip \
+  && unzip /opt/sonar-scanner.zip -d /opt \
+  && rm /opt/sonar-scanner.zip \
+  && ln -s /opt/sonar-scanner-${SONAR_SCANNER_VERSION}/bin/sonar-scanner /usr/bin/sonar-scanner
 
 # installing specific list of plugins. see: https://github.com/jenkinsci/docker#preinstalling-plugins
 COPY plugins.txt /usr/share/jenkins/plugins.txt
