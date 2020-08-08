@@ -9,10 +9,13 @@ networks:
     driver: bridge
 
 volumes:
+  sonarqube_conf:
   sonarqube_data:
   sonarqube_extensions:
   sonarqube_logs:
+  sonarqube_bundled-plugins:
   sonarqube_db:
+  sonarqube_db_data:
   nexus_data:
   jenkins_data:
   jenkins_docker_certs:
@@ -105,7 +108,8 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - sonarqube_db/:/var/lib/postgresql
+      - sonarqube_db:/var/lib/postgresql
+      - sonarqube_db_data:/var/lib/postgresql/data
     environment:
      - POSTGRES_USER=sonar
      - POSTGRES_PASSWORD=sonar
@@ -116,9 +120,11 @@ services:
     container_name: sonarqube
     hostname: sonarqube
     volumes:
+      - sonarqube_conf:/opt/sonarqube/conf
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_extensions:/opt/sonarqube/extensions
       - sonarqube_logs:/opt/sonarqube/logs
+      - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
     ports:
      - "19000:9000"
     networks:
