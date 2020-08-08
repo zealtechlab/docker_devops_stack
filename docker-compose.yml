@@ -3,6 +3,10 @@ version: '3'
 networks:
   cicdnetwork:
     driver: bridge
+  jenkins_docker:
+    driver: bridge
+  sonardb_network:
+    driver: bridge
 
 volumes:
   sonarqube_data:
@@ -12,6 +16,7 @@ volumes:
   nexus_data:
   jenkins_data:
   jenkins_home:
+  jenkins_docker_certs:
 
 services:
 
@@ -23,10 +28,40 @@ services:
       - "18081:8081"
       - "15000:5000"
     networks:
-      - cicdnetwork
+      cicdnetwork:
+        aliases:
+          - nexus
     volumes:
       - nexus_data:/nexus-data
 
+  # https://www.jenkins.io/doc/tutorials/build-a-python-app-with-pyinstaller/
+
+  # $ docker network create jenkins-docker
+  # $ docker volume create jenkins-docker-certs
+  # $ docker volume create jenkins-data
+  # $ docker container run --name jenkins-docker --rm --detach \
+  # --privileged --network jenkins --network-alias docker \
+  # --env DOCKER_TLS_CERTDIR=/certs \
+  # --volume jenkins-docker-certs:/certs/client \
+  # --volume jenkins-data:/var/jenkins_home \
+  # --volume "$HOME":/home docker:dind
+
+  jenkins_docker_dind:
+    privileged: true
+    image: docker:dind
+    container_name: jenkins_docker_dind
+    hostname: jenkins_docker_dind
+    volumes:
+      - ~:/home
+      - jenkins_docker_certs:/certs/client
+      - jenkins_data:/var/jenkins_home
+    environment:
+      - DOCKER_TLS_CERTDIR=/certs
+    networks:
+      jenkins_docker:
+        aliases:
+          - docker
+ 
   jenkins:
     build: ./jenkins
     container_name: jenkins
@@ -36,26 +71,35 @@ services:
       - "18080:8080"
       - "50000:50000"
     networks:
-      - cicdnetwork
+      cicdnetwork:
+        aliases:
+          - jenkins
+      jenkins_docker:
+        aliases:
+          - jenkins
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /snap/bin/docker:/usr/bin/docker
+      # - /var/run/docker.sock:/var/run/docker.sock
+      # - /snap/bin/docker:/usr/bin/docker
       - jenkins_data:/var/lib/jenkins/
       - jenkins_home:/var/jenkins_home
     depends_on:
+      - jenkins_docker_dind
       - nexus
       - sonarqube
     environment:
+      - DOCKER_HOST=tcp://docker:2376
       - NEXUS_PORT=8081
       - SONAR_PORT=9000
       - SONAR_DB_PORT=5432
 
   sonardb:
-    networks:
-      - cicdnetwork
     image: postgres:9.6
     container_name: sonardb
     hostname: sonardb
+    networks:
+      sonardb_network:
+        aliases:
+          - sonardb
     ports:
       - "5432:5432"
     volumes:
@@ -76,7 +120,12 @@ services:
     ports:
      - "19000:9000"
     networks:
-      - cicdnetwork
+      cicdnetwork:
+        aliases:
+          - sonarqube
+      sonardb_network:
+        aliases:
+          - sonarqube
     depends_on:
       - sonardb
     environment:
@@ -90,7 +139,9 @@ services:
     hostname: nginx-proxy
     image: nginx:mycicd
     networks:
-      - cicdnetwork
+      cicdnetwork:
+        aliases:
+          - nginx-proxy
     ports:
       - "28080:8080"
       - "28081:8081"
