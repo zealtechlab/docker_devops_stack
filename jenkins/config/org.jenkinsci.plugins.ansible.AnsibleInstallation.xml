@@ -3,7 +3,7 @@
   <installations class="org.jenkinsci.plugins.ansible.AnsibleInstallation-array">
     <org.jenkinsci.plugins.ansible.AnsibleInstallation>
       <name>ansible</name>
-      <home>/usr/local/bin</home>
+      <home>/usr/bin</home>
       <properties/>
     </org.jenkinsci.plugins.ansible.AnsibleInstallation>
   </installations>
