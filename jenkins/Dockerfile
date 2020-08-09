@@ -15,7 +15,7 @@ LABEL Prabhakaran Sampath <prabhakaran@zealtechlab.co.in>
 
 USER root
 
-RUN apk add --no-cache curl tar bash procps git openssh less ca-certificates
+RUN apk add --no-cache curl tar bash procps git openssh less ca-certificates nodejs
 
 # Downloading and installing Maven
 ARG MAVEN_VERSION=3.6.3

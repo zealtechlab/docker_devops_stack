@@ -3,7 +3,7 @@
   <installations>
     <hudson.plugins.sonar.SonarRunnerInstallation>
       <name>sonarQube_Scanner</name>
-      <home>/usr/bin</home>
+      <home>/usr</home>
       <properties/>
     </hudson.plugins.sonar.SonarRunnerInstallation>
   </installations>
