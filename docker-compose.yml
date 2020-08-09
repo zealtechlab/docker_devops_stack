@@ -64,6 +64,9 @@ services:
       jenkins_docker:
         aliases:
           - docker
+      cicdnetwork:
+        aliases:
+          - docker_dind
  
   jenkins:
     build: ./jenkins
