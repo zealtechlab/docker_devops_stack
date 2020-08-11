@@ -15,7 +15,7 @@ LABEL Prabhakaran Sampath <prabhakaran@zealtechlab.co.in>
 
 USER root
 
-RUN apk add --no-cache curl tar bash procps git openssh less ca-certificates nodejs
+RUN apk add --no-cache curl tar bash procps git openssh less ca-certificates nodejs npm 
 
 # Downloading and installing Maven
 ARG MAVEN_VERSION=3.6.3
@@ -120,6 +120,9 @@ RUN install-plugins.sh < /usr/share/jenkins/plugins.txt
 # ARG REF=/usr/share/jenkins/ref was already set in the base image
 # Adding default Jenkins Seed Job
 COPY jobs ${REF}/jobs/
+
+# Selenium side runner local to jenkins
+RUN npm install -g selenium-side-runner chromedriver edgedriver geckodriver iedriver --unsafe-perm=true --allow-root
 
 ############################################
 # Configure Jenkins
