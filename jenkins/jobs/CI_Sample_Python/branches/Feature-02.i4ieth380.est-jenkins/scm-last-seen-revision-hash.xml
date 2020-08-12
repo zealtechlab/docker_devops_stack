@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl plugin="git@4.3.0">
+  <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.8.3">
+    <name>Feature_02_base_flask_blog_pytest_jenkins</name>
+  </head>
+  <hash>5580410c58c43822e921b4bd643fe0ebe88e01d8</hash>
+</jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl>

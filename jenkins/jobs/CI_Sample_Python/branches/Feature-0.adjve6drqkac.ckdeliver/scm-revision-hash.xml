@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl plugin="git@4.3.0">
+  <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.8.3">
+    <name>Feature_03_base_flask_blog_pytest_sonar_dockdeliver</name>
+  </head>
+  <hash>42d1adb51410ca17ce9105cd54d7d5cc0d5ea1ea</hash>
+</jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl>
