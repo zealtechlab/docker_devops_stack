@@ -20,6 +20,10 @@ services:
       seleniumgrid:
         aliases:
           - seleniumhub
+    environment:
+      - GRID_TIMEOUT=2
+      - GRID_BROWSER_TIMEOUT=2
+      - SE_OPTS=-timeout 120 -browserTimeout 120
     healthcheck:
         test: '/opt/bin/check-grid.sh --host 0.0.0.0 --port 4444'
         interval: 15s
@@ -34,6 +38,8 @@ services:
       - seleniumhub
     environment:
       - HUB_HOST=seleniumhub
+      - NODE_MAX_INSTANCES=2
+      - NODE_MAX_SESSION=2
     networks:
       seleniumgrid:
         aliases:
@@ -49,6 +55,8 @@ services:
       - seleniumhub
     environment:
       - HUB_HOST=seleniumhub
+      - NODE_MAX_INSTANCES=2
+      - NODE_MAX_SESSION=2
     networks:
       seleniumgrid:
         aliases:

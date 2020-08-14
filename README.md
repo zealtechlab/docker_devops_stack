@@ -217,6 +217,12 @@ The Jobs cover the following tasks:
 
 ![Selenium Grid](screenshots/selenium-grid.png)
 
+#### Scale Selenium-Nodes
+
+If you want to run five tests in parallel for Firefox you must scale your Firefox Selenium-Node. This is done by one command, really. 
+Execute ```docker-compose -f docker-compose-selenium.yml scale firefox=2``` and you should see 2 Firefox Docker container running and registered to the Selenium-Hub. 
+Execute ```docker-compose -f docker-compose-selenium.yml scale chrome=2``` and you should see 2 chrome Docker container running and registered to the Selenium-Hub.
+
 ## Testing Upgrades
 
 In order to test new versions, I prefer starting out with a blank VirtualBox image.
