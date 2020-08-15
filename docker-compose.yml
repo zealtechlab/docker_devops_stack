@@ -37,18 +37,6 @@ services:
     volumes:
       - nexus_data:/nexus-data
 
-  # https://www.jenkins.io/doc/tutorials/build-a-python-app-with-pyinstaller/
-
-  # $ docker network create jenkins-docker
-  # $ docker volume create jenkins-docker-certs
-  # $ docker volume create jenkins-data
-  # $ docker container run --name jenkins-docker --rm --detach \
-  # --privileged --network jenkins --network-alias docker \
-  # --env DOCKER_TLS_CERTDIR=/certs \
-  # --volume jenkins-docker-certs:/certs/client \
-  # --volume jenkins-data:/var/jenkins_home \
-  # --volume "$HOME":/home docker:dind
-
   jenkins_docker_dind:
     privileged: true
     image: docker:dind

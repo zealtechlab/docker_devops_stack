@@ -1,0 +1,26 @@
+version: '3'
+
+networks:
+  cicdnetwork:
+    driver: bridge
+
+services:
+
+  jmeter:
+    build: ./jmeter
+    container_name: jmeter
+    hostname: jmeter
+    image: jmeter:mycicd
+    networks:
+      cicdnetwork:
+        aliases:
+          - jmeter
+  #   environment:
+  #     - DISPLAY="xvfb:1.0"
+  #   links:
+  #     - xvfb
+  # xvfb:
+  #   image: misoca/xvfb
+  #   container_name: xvfb
+  #   hostname: xvfb
+  #   command: :1 -ac -listen tcp -screen 0 1024x768x24

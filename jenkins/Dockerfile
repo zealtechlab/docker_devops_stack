@@ -124,6 +124,20 @@ COPY jobs ${REF}/jobs/
 # Selenium side runner local to jenkins
 RUN npm install -g selenium-side-runner chromedriver edgedriver geckodriver iedriver --unsafe-perm=true --allow-root
 
+# Install Jmeter
+RUN  echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
+    && curl -L https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.3.tgz >  /tmp/jmeter.tgz \
+    && tar -xvf /tmp/jmeter.tgz -C /opt \
+    && rm /tmp/jmeter.tgz \
+    && curl -L https://jmeter-plugins.org/get/ > /opt/apache-jmeter-5.3/lib/ext/jmeter-plugins-manager.jar \
+    && curl -L https://repo1.maven.org/maven2/kg/apc/cmdrunner/2.2/cmdrunner-2.2.jar > /opt/apache-jmeter-5.3/lib/cmdrunner-2.2.jar
+
+# Generate Plugins Manager command line utility:
+RUN java -cp /opt/apache-jmeter-5.3/lib/ext/jmeter-plugins-manager.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
+
+# Install the WebDriver Sampler plugin:
+RUN /opt/apache-jmeter-5.3/bin/./PluginsManagerCMD.sh install jpgc-webdriver
+
 ############################################
 # Configure Jenkins
 ############################################

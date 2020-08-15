@@ -120,6 +120,7 @@ pipeline-stage-tags-metadata:latest
 pipeline-stage-view:latest
 pipeline-utility-steps:latest
 plain-credentials:latest
+plot:latest
 plugin-util-api:latest
 pubsub-light:latest
 resource-disposer:latest
