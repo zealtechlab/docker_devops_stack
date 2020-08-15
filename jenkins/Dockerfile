@@ -138,6 +138,8 @@ RUN java -cp /opt/apache-jmeter-5.3/lib/ext/jmeter-plugins-manager.jar org.jmete
 # Install the WebDriver Sampler plugin:
 RUN /opt/apache-jmeter-5.3/bin/./PluginsManagerCMD.sh install jpgc-webdriver
 
+ENV PATH $PATH:/opt/apache-jmeter-5.3/bin
+
 ############################################
 # Configure Jenkins
 ############################################
