@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl plugin="git@4.3.0">
+  <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.8.3">
+    <name>Feature_00_flask_side_jmeter_jenkins</name>
+  </head>
+  <hash>ef51a33de5c927d02b9f71cdc45d71c8841d2404</hash>
+</jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl>

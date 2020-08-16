@@ -1,28 +1,44 @@
 Started by timer
-[Wed Aug 12 17:26:00 GMT 2020] Starting branch indexing...
-[8mha:////4CSFvzihUOEoJaD3KfYmczSHVQIcHq9R+SBNI4MXjsNXAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTx4628LwC6f3mDjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
-[8mha:////4O80Dy22bGObE6tqgSrx6xUemwl3nqKzAeq9H1DtfmiHAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTx4638FwEwlUrujgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 59 remaining (6 under budget). Next quota of 60 in 59 min
+[Sun Aug 16 02:51:00 GMT 2020] Starting branch indexing...
+[8mha:////4GTDJzdFHJI0N256F4hUWfGtkj+2Cv69ivccwf3vG/DCAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV92MEgA83jjkjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+[8mha:////4AM1BItdPSUmkDxSWEqJr9UhTiORYCYfxxEoy2Ir46TTAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV93cgwB6bUQijgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 58 remaining (5 under budget). Next quota of 60 in 59 min
 Examining [8mha:////4H9YbdrJBFTPOHL27jvi9Wxfoqebd9izhyI3LoUIa/HhAAAArB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKmHQzSgpKSi20tdPzyzJKE0C6srVr0pNzClJTc7ISUzSdw6JD07MLchJjfcC2gUA/ATNArIAAAA=[0mzealtechlab/CT_Sample_Java
 
   Checking branches...
-[8mha:////4Bb5oPdoQhVLFmJO1Nyh3riw24IwEeXwpd6qh/xoz2n4AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTx460CogAHnRm/jgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 60 remaining (6 under budget). Next quota of 60 in 1 hr 0 min
+[8mha:////4MTN76JX/Ro3ICCdz/ayXZjd0QWYUf7p1uq1HoT0ZmXOAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV928PQA4M90njgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 59 remaining (6 under budget). Next quota of 60 in 59 min
 
   Getting remote branches...
 
     Checking branch [8mha:////4FT0L+QLDLLyBbo9rIUVSp1N8RK9GFT4HGCbfjRs8ZK+AAAAtR+LCAAAAAAAAP9djTEOgkAQRUeMHMDSeAa2M1FDRaOG2GBPFpyw6LC72R0MegyvoY2H8DjeQYidv/m/ee8/PzDxDuaqPXqjo9JobwijzdWio1qf94ZxET9e8d2+Awi2EBLqilUK49YRwzQ9yYsUJHUlMna1rtadg9mfLvn1IINfRgFAZ/sRMiwVs/UrIaqaVVv0VCNuKImxVCQLkRzyTDaWMN8NX+wQRSM9o/sCDuP4lr4AAAA=[0mmaster
-[8mha:////4BGNIfM0I1MvFQ+luiUX9UhIP4YOKf8xZGI/UUmdeTloAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTx462CvQAwt9ZYjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 59 remaining (6 under budget). Next quota of 60 in 59 min
+[8mha:////4BJnRHBk5x+pg+4qsf+IbgEkXIvuzd7SZb2uVMWOvsEuAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV92CNAAtN5qVjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 58 remaining (5 under budget). Next quota of 60 in 59 min
 
   Getting remote pull requests...
       ‘Jenkinsfile’ not found
     Does not meet criteria
-[8mha:////4Hky/Rg3UA3dVdSkRW4oekFG0LcZIF4mszJ9V1trNZRjAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTx463C3wAGfTetjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 60 remaining (6 under budget). Next quota of 60 in 1 hr 0 min
+[8mha:////4IhdFRM4MOvOhvB6EO0oWQXATpX3E2NB6tWERl/m8LN/AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV93iYgAFgGrTjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 58 remaining (5 under budget). Next quota of 60 in 59 min
 
-    Checking branch [8mha:////4JYuYJZmLyetLevMSkETh6UMohZ1pSa0D41+3jt3OQkAAAAAyx+LCAAAAAAAAP9djrENwjAURD9BMAAlomEBnIoClCoSAgQ0iWgtE77sgONYzjcCxmANaBiCcdiBROm45q65d/f6Qq9yMFL+WJVmkpWmKjVOljeLTufmvCsJp9HzHT3sJ4BgBX2NRpLaQNc7TTDYnMRFMC2MZAm53Mj51cHwDxe33sCgVScAuNo6jAlSRWSrGWMyJ+UPdatgdxSaMFNaHFic8kQUViNfN1vkENkCBXmHPAx5YutZ2u5jXlwMT7A+mPviB6Ui6xbZAAAA[0mFeature_00_SprintMVC_mvn_Selenium
+    Checking branch [8mha:////4KLUpaZZBSzcDzbtwq0lyqJpHWVE5KA2sU3j1+WIPNaKAAAAxR+LCAAAAAAAAP9djk0OAUEUhJ8RDmCJM0xbWRAriTCZiGTsO42X6aH/0v1ahmO4BhuHcBx3MGKnNlWb+qoeb+gED0MZD8GadG9NsArT5cWhV5U5rS3heHZ/zm7ulUCygq5CU5LMoR29IujlR3EWTAlTsoJ8Zcpp7aH/h5v//AuDn1oJQO2aMCBYSyIXJoyVFcm4a1qaXVEowr1UYsfmW14I7RTy7LtFHpEtUFD0yEcjnhUbrs+GB2yuVVF/AOuoHVLTAAAA[0mFeature_00_JSP_mvn_selenium
       ‘Jenkinsfile’ not found
     Does not meet criteria
-[8mha:////4LxdnR7qdON8KRyY9b/W3Jfr8c86NgC4V7gc5U/5oPvPAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTx462iRQC5nbgRjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 59 remaining (6 under budget). Next quota of 60 in 59 min
+[8mha:////4JbLWZtUNxDUHM+pm/tWhBZXT9p8s0xGJ9vYrzGhTNDMAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV91SawAh7jf9jgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 60 remaining (7 under budget). Next quota of 60 in 59 min
 
-  2 branches were processed
+    Checking branch [8mha:////4N8OqNcZC0PB8QobGVLy2SsUuQgQLlAQs+gxEDTZyvqDAAAAzR+LCAAAAAAAAP9djkEOAUEURL8RDmApltaajQWxkggiIhmJZaeHn+mmp6fz5/cEx3ANNg7hOO5gxE5tqjb1qh5vaBQEHR0ORe56+9wVucXe/OKRrHGndc44nNyfk5t/RRAtoGnRpaxXUA9kGVqroyqVsMqlImYyLh2fCdp/uOnPvzD4qRYBnH0Vugw7zeyLkRCpYR2SqpWJKyrLuNdWJWK6lbHKvEW5/G4xIYoZKg6Esj+Qy3gjs9LJGKtrJmQ7TA5kSqQPF8bsfdwAAAA=[0mFeature_01_JSP_mvn_SeleniumWebdriver
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+[8mha:////4Fif84GiYzCXR0ToSm3KccSQAyt2acFzVI3ls3hW/frAAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV91yHgCsKbx3jgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 59 remaining (6 under budget). Next quota of 60 in 59 min
+
+    Checking branch [8mha:////4E4uNS7zvaUYZF0mOWmc/6N/4y7AVobxmjzEsi9j2fCtAAAAzB+LCAAAAAAAAP9dTj0OAUEY/axwAKWolTuiUBCVRNiISFajmgy+7Awzs5OZbwTHcA0ah3Acd7Ci85r3ivf3eEMjeOjIuA+lTXelDaXGdHZx6LWyx2VJOBjfn+ObeyWQzKGp0RYkF1CPXhO0FgdxEkwLW7CcvLLF6Oyh/Vc3+fG3DH6oJQBnV4kuwUYSuTBkrFAk47ZKGXZFoQl3Uostm6x5LozTyLPvFnlENkVB0SPv9XmWr7g5WR6wuqaiCWpfOQ0S+g+voZZN3gAAAA==[0mFeature_02_JSP_mvn_seleniumside_Jmeter
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+[8mha:////4IvDoJWk0ksFI/3RsuYjeU8yT++izYKW4/De8mC7t3+AAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV92KFwACE0NXjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 60 remaining (7 under budget). Next quota of 60 in 59 min
+
+    Checking branch [8mha:////4Pfi6K3U96HIxy09HxXOgM3jgmLcwzMKcfpMAFKHNGsgAAAAzR+LCAAAAAAAAP9djUEOAUEQRcsIB7AUO3stkVgQK4kwEZGM2HbaqEw3PTWd7hoZjuEabBzCcdwBsfM3/2/e+/cXNIKHji73oaBeWlAoLPbmZ4feGjquCsbh5PaYXN0zgmgBTYuUsV5CvfSWobU8qJMSVlEmEvaGsnHlof2nm/76K4NfahFA5T6jy7DVzC6MhMgM63L3oXJxQWUZU23VTkw3MlG5syjj7xd7RDFDxaVH2R/IOFnL/EQymD3KQ17JGOloKLwBXXar29sAAAA=[0mFeature_03_JSP_mvn_side_jmx_Jenkins
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: Feature_03_JSP_mvn_side_jmx_Jenkins (still at 8018aa02a7b9283a9e540f39d6e943603d685164)
+[8mha:////4Nu9fIsFY0zvAVNoinbdM8yhzOaFieerxAE1sm8v0b6jAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV93qKgCpsm9ijgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 59 remaining (6 under budget). Next quota of 60 in 59 min
+
+  5 branches were processed
 
   Checking pull-requests...
 
@@ -30,5 +46,5 @@ Examining [8mha:////4H9YbdrJBFTPOHL27jvi9Wxfoqebd9izhyI3LoUIa/HhAAAArB+LCAAAAAA
 
 Finished examining zealtechlab/CT_Sample_Java
 
-[Wed Aug 12 17:26:02 GMT 2020] Finished branch indexing. Indexing took 1.9 sec
+[Sun Aug 16 02:51:05 GMT 2020] Finished branch indexing. Indexing took 4.9 sec
 Finished: SUCCESS
