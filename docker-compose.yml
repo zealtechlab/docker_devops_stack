@@ -20,8 +20,26 @@ volumes:
   jenkins_data:
   jenkins_docker_certs:
   jenkins_logs:
+  docker_registry_data:
 
 services:
+
+  docker_registry:
+    restart: always
+    image: registry:2
+    hostname: docker_registry
+    container_name: docker_registry
+    ports:
+      - "15000:5000"
+    networks:
+      cicdnetwork:
+        aliases:
+          - registry
+          - docker_registry
+          - localregistry
+          - local-registry
+    volumes:
+    - docker_registry_data:/var/lib/registry
 
   nexus:
     image: sonatype/nexus3
@@ -29,7 +47,9 @@ services:
     hostname: nexus
     ports:
       - "18081:8081"
-      - "15000:5000"
+    depends_on:
+      - jenkins_docker_dind
+      - docker_registry
     networks:
       cicdnetwork:
         aliases:
@@ -146,6 +166,7 @@ services:
       - "28081:8081"
       - "29000:9000"
       - "20080:80"
+      - "25001:5000"
     healthcheck:
         test: curl -f http://nginx-proxy
         interval: 15s
@@ -155,3 +176,5 @@ services:
       - jenkins
       - sonarqube
       - nexus
+      - jenkins_docker_dind
+      - docker_registry
