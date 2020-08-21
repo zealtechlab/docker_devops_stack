@@ -1,0 +1,62 @@
+Started by timer
+[Thu Aug 20 02:59:00 GMT 2020] Starting branch indexing...
+[8mha:////4MHjU55BJqEwzz+CTxfkb1aFriPh67kKOoB+5ixWZPoIAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHQJ5zmdaACScsgOjgAAAA==[0mConnecting to https://api.github.com using prabha6kar/****** (GitHub credentials)
+Examining [8mha:////4P0ye0eV52/HXNV7dQBhzjXykJx9JyPxCg7s5ijgfNyUAAAArB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKmHQzSgpKSi20tdPzyzJKE0C6srVr0pNzClJTc7ISUzSd/aMD07MLchJjfcC2gUAWMLm8bIAAAA=[0mzealtechlab/CI_Sample_Java
+
+  Checking branches...
+
+  Getting remote branches...
+
+    Checking branch [8mha:////4Bc/AvoZoRfuPT7rhSS+cC0wT3WJwIOChNkgQ2TMFzHTAAAAtR+LCAAAAAAAAP9djTEOgkAQRUeMHMDSeAa2M1FDRSOG2HAAsuCERYfdze5g0GN4DW08hMfxDkLs/M3/zXv/+YGZd7BU3dEbHVVGe0MY7a4WHTX6fDCMq/jxiu/2HUCQQkioa1YZTDtHDPPsJC9SkNS1yNk1ut72DhZ/uuTXowx+mQQAvR1GyLBWzNZvhKgbVl05UK24oSTGSpEsRZIWuWwtYbEfv9ghilZ6RvcFIo3SvL4AAAA=[0mmaster
+
+  Getting remote pull requests...
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+
+    Checking branch [8mha:////4Mb78kCeTho7BZeRE/6kI/23M5sySWw6IHvNHtZgDdjiAAAAyx+LCAAAAAAAAP9dTbsNwjAUfATBAJSIBWjijgKUCoQIimhS0CBZTniyDca2nBcEjMEa0DAE47ADn3Rccyfd7/6CThVgoOpt5WxcOls5g/Hi7DEYbfcrRzhKbo/k6p8RRCl0DVpJKoN2HQxBL9uJo2BGWMlyCtrKySlA/29u2vB3DBq0IoCT/4ghwUYR+WrMmNSk6uLTOrALCkNYKiMKNk15Lg7eIF9+vyggsjkKqgPymSsx6Etj8Vz/YpmT2vI1FsL7N9J8KQLhAAAA[0mFeature_Docerize_Java_Simple_Login_Webapp
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+
+    Checking branch [8mha:////4A66LPaeyFW+vfTBbLxtjF7ccBsSVNcSMJ2/09H69nmpAAAAzR+LCAAAAAAAAP9dTTtuAjEUfFmUHIAyok+HuxQgqpUQRAvNFkg0lpc82YaHbey3CDgG14CGQ3Ac7sBnO6aZ0Wg+5xt8pggdU/8n77oL75In7I72ASNZt5p6xt/B6TI4hmsG2Ri+CJ1mU0CrjsTQLpZqqwQpp0XJ0Trd30X4fpvLG36OQYOPDGAXHuKHYW6YQ+oJoS2bunq01uKAihgXhlQl8rEs1ToQyr/nF0dEMUTFdWwcOdmnDcnSvjKF19bJGVZShXAHTiMOM98AAAA=[0mFeature_Java_Mysql_Simple_Login_Web_app
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+
+    Checking branch [8mha:////4O9VV1BJI+s6nDsGTwtZWOPFuBYleSLc+B6TwDepkJsoAAAAxx+LCAAAAAAAAP9dTTsKAjEUfK7oASzF0tp0FspWC6KyiLCFZXirjyQak5B9K+oxvIY2HsLjeAd/ndPMMMzn9oRWFaGn603l3WDtXeUtDaanQNEat1t4pmF6vaeX8EggmUHbklOsc2jW0TJ08i0eUFh0ShQcjVPjY4Tu31z2488Y/NBIAI7hLfoMK80cqpEQyrCuy3drL86ElmmtLZYim8kC98GSnH++OBKJCSHXkeQSs68rC/NN5F4ZJ1dUYggv+SruzdwAAAA=[0mFeature_PaC_Java_Simple_Login_Webapp
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: Feature_PaC_Java_Simple_Login_Webapp (still at 1c15563763b352243887680f0840f6e12368fb61)
+
+    Checking branch [8mha:////4JUidL8C7LjwWwZHmvuYxpgXeFYlJTBxGpkFmppbY9b6AAAA4R+LCAAAAAAAAP9dTkFOwzAQXILgARwRP0CqbxxAPQVVFEUIKUIcrU1Y2abO2rLXUcoz+AZceATP4Q+k7a1zmdVoZna+/+AsJ7iy5S0HXvSBc/C0eNhGSt7x5ikI3Sy/fpaf8beCag3nntiIbeC0JC9w0bzjiMojG9VKcmzupgSXR3X1gXdlcMBJBTDF+agFRisS861Sxokt3Zwa1AehF+qtx07Va93iED3px90vSURqRSglkX7Gfq/q1u0dTTCOr1+pwxj1PAGTZppK1i/sRCiLHka+p+jD9h9kx9q/+wAAAA==[0mFeature_Pac_Java_Simple_Login+Webapp_sonar_nexus_Unittest_mvnDeploy
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: Feature_Pac_Java_Simple_Login+Webapp_sonar_nexus_Unittest_mvnDeploy (still at e7767c3b93f1234520a488ea4e0bef2d4340ee29)
+
+    Checking branch [8mha:////4JlYLaVmAKLnSvRn7PgWuqUxhvi7uA8P/tsYpeCv+EecAAAA0R+LCAAAAAAAAP9dTjGOwjAQXIK4B1AiXkARd1ccSoWECIrQSSmoTtYmrGyDsS1ngziewTeg4RH3HP5AgO6mmdVoZnaudxg0Eca63TTepbV3jbeULn4DRWvcbuWZPrPLLTuHvwSSHD4sOcW6gH4bLcOw2OIBhUWnRMnRODU9Rhj9q5u9+VkGb/QSgGPojgnDj2YOzZcQyrBuqy61FydCy1Rri5WY5bLEfbAkl89fHInEnJDbSPIb65cqS/NyFF4ZJ9dUYQiym4DxAWJQxp/iAAAA[0mFeature_Pac_Java_Simple_Login_Webapp_sonar
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: Feature_Pac_Java_Simple_Login_Webapp_sonar (still at 3ec032032f6c4e30f67480a11efdd4512f9aa349)
+
+    Checking branch [8mha:////4PoUJ+c6RlxwjKOandRHyR3++ysAbDSZlPxUlgoyZdUmAAAA0x+LCAAAAAAAAP9dTjFuAjEQXA7BA1Ii3oCpUiSiQkKATijSFZTW3mVlG4xt2Wt05Bl8AxoekefwhxzQZZpZjWZm53qHQYow1vk7eTdpvEve0mR5ChStcfuNZ3qfXW6zc/gtoFjB0JJTrEvo52gZ3sodHlFYdEpUHI1Tn22E0b+6+YsfZfBCrwBoQ3dMGRrNHNKHEMqwznWXOogfQsvUaIu1mK9khYdgSa4fvzgSiQUh50jyC5unKivzdJReGSe3VGMIspuAUTpqc/oDqw+xBegAAAA=[0mFeature_Pac_Java_Simple_Login_Webapp_sonar_nexus
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: Feature_Pac_Java_Simple_Login_Webapp_sonar_nexus (still at 7aefe3a1c2804150f3a3ab143eae913457db5d16)
+
+    Checking branch [8mha:////4H7sWKiTRJNLZf7xTtx1wbKPB5VSdwbbAOp+2yo5Rjr0AAAA2B+LCAAAAAAAAP9dTkFKA0EQ7KzEB3gU35C5CSo5BcTIIoFFPA69azMz2ukZZnrC6jP8hl58hM/xD26Sm3Wppqiqrq9fmJcMF74+lyiLIUqJTIu7t0SZg7w+RKXL5ef38iP9NNCs4ZRJnPoWTmpmhbP2BXdoGMWZTnMQdzNmOP9XtzryvgyOmDUAY5qOKwX2qqlcG+OC+tpPqa15J2SlwTP2ZrW2HW4Tk73f/9JMZG4JtWayGxwOqu3CwdFGF8Q+UY8p2WkCZis01mIfJahS0T8uTdnx8QAAAA==[0mFeature_Pac_Java_Simple_Login_Webapp_sonar_nexus_Unittest
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: Feature_Pac_Java_Simple_Login_Webapp_sonar_nexus_Unittest (still at 2fdc24a98d52ed34db02e61c1cdabd0552b67da4)
+
+    Checking branch [8mha:////4FVDREoqAG04+62AES9E2IUGyHRAsX1fUTK5CRsSACkbAAAAwh+LCAAAAAAAAP9djTEOgkAQRUeMHsBO4xV0OwoNFY0YYuMBzIATFhmWze5g1GN4DW08hMfxDmLo/M3/zX/v+YGRdzDX7dE3Zpk3xjdMy83VkuPSVLtGKIwer+hu3wEECYyZTCE6hWHrWGCSnvCMitEUai+uNMX64mD2h4v7/sGgzyAAuNhuTAVSLWL9SqmiFN1m3atWN0IWyjVjpuLksMfaMh22P5c4ImUdZhrDCt0i152cFlzmZDx9AcUJauTRAAAA[0mprabha6kar-change-license
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+
+  9 branches were processed
+
+  Checking pull-requests...
+
+  0 pull requests were processed
+
+Finished examining zealtechlab/CI_Sample_Java
+
+[Thu Aug 20 02:59:13 GMT 2020] Finished branch indexing. Indexing took 13 sec
+Finished: SUCCESS

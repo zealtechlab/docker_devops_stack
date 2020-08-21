@@ -1,0 +1,25 @@
+Started by timer
+[Fri Aug 21 08:11:00 GMT 2020] Starting branch indexing...
+[8mha:////4JmGxIZ7K0OAfXzAwgWu+6l0Co8q4/4IAfI3ZNIOhXWTAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSJgJCuKQDN21sUjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+[8mha:////4J1EHyJ1E5jeCtiWbx3BoCK6QzC961LhgMdQc8ONRgQaAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSJgJDeJgCNnqpMjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 52 remaining (1 over budget). Next quota of 60 in 59 min. Sleeping for 4 min 27 sec.
+[8mha:////4PXp1c46dZcMbHo0HNGWLicYRdEqxhMqMvcfaAnMTzdsAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSJgJDeFgC4O8mljgAAAA==[0mJenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+[8mha:////4MYHi8x9TOdIIdL7dt27cuCPLpJIB2fCGHs//7kULKWdAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSJgMjbqwBJkiZ7jgAAAA==[0mJenkins-Imposed API Limiter: Still sleeping, now only 1 min 27 sec remaining.
+ERROR: [Fri Aug 21 08:15:27 GMT 2020] Could not fetch branches from source 35097005-301f-4a95-a0a7-e6df6f578189
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker.waitUntilRateLimit(ApiRateLimitChecker.java:162)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker.access$400(ApiRateLimitChecker.java:13)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker$1.checkApiRateLimit(ApiRateLimitChecker.java:76)
+	at org.jenkinsci.plugins.github_branch_source.Connector.checkApiRateLimit(Connector.java:610)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrieve(GitHubSCMSource.java:951)
+	at jenkins.scm.api.SCMSource._retrieve(SCMSource.java:373)
+	at jenkins.scm.api.SCMSource.fetch(SCMSource.java:283)
+	at jenkins.branch.MultiBranchProject.computeChildren(MultiBranchProject.java:641)
+	at com.cloudbees.hudson.plugins.folder.computed.ComputedFolder.updateChildren(ComputedFolder.java:278)
+	at com.cloudbees.hudson.plugins.folder.computed.FolderComputation.run(FolderComputation.java:165)
+	at jenkins.branch.MultiBranchProject$BranchIndexing.run(MultiBranchProject.java:1032)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+[Fri Aug 21 08:15:27 GMT 2020] Finished branch indexing. Indexing took 4 min 26 sec
+Aborted
+Finished: ABORTED

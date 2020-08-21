@@ -15,28 +15,28 @@
   <properties>
     <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.22">
       <branch plugin="branch-api@2.5.9">
-        <sourceId>8e48809a-116f-4947-a3d0-1d32cdc04295</sourceId>
+        <sourceId>e27c4a7e-46ca-490c-8bb0-8afea1115660</sourceId>
         <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.8.3">
-          <name>Feature_01_base_flask_blog_pytest</name>
+          <name>Feature_Pac_Java_Simple_Login_Webapp_sonar</name>
         </head>
         <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">
           <configVersion>2</configVersion>
           <userRemoteConfigs>
             <hudson.plugins.git.UserRemoteConfig>
               <name>origin</name>
-              <refspec>+refs/heads/Feature_01_base_flask_blog_pytest:refs/remotes/origin/Feature_01_base_flask_blog_pytest</refspec>
-              <url>https://github.com/zealtechlab/CI_Sample_Python.git</url>
-              <credentialsId>3</credentialsId>
+              <refspec>+refs/heads/Feature_Pac_Java_Simple_Login_Webapp_sonar:refs/remotes/origin/Feature_Pac_Java_Simple_Login_Webapp_sonar</refspec>
+              <url>https://github.com/zealtechlab/CI_Sample_Java.git</url>
+              <credentialsId>5</credentialsId>
             </hudson.plugins.git.UserRemoteConfig>
           </userRemoteConfigs>
           <branches class="singleton-list">
             <hudson.plugins.git.BranchSpec>
-              <name>Feature_01_base_flask_blog_pytest</name>
+              <name>Feature_Pac_Java_Simple_Login_Webapp_sonar</name>
             </hudson.plugins.git.BranchSpec>
           </branches>
           <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
           <browser class="hudson.plugins.git.browser.GithubWeb">
-            <url>https://github.com/zealtechlab/CI_Sample_Python</url>
+            <url>https://github.com/zealtechlab/CI_Sample_Java</url>
           </browser>
           <submoduleCfg class="empty-list"/>
           <extensions>
@@ -49,11 +49,11 @@
         <actions>
           <org.jenkinsci.plugins.github__branch__source.GitHubLink plugin="github-branch-source@2.8.3">
             <iconClassName>icon-github-branch</iconClassName>
-            <url>https://github.com/zealtechlab/CI_Sample_Python/tree/Feature_01_base_flask_blog_pytest</url>
+            <url>https://github.com/zealtechlab/CI_Sample_Java/tree/Feature_Pac_Java_Simple_Login_Webapp_sonar</url>
           </org.jenkinsci.plugins.github__branch__source.GitHubLink>
           <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@2.6.3">
-            <objectDisplayName>Feature_01_base_flask_blog_pytest</objectDisplayName>
-            <objectUrl>https://github.com/zealtechlab/CI_Sample_Python/tree/Feature_01_base_flask_blog_pytest</objectUrl>
+            <objectDisplayName>Feature_Pac_Java_Simple_Login_Webapp_sonar</objectDisplayName>
+            <objectUrl>https://github.com/zealtechlab/CI_Sample_Java/tree/Feature_Pac_Java_Simple_Login_Webapp_sonar</objectUrl>
           </jenkins.scm.api.metadata.ObjectMetadataAction>
         </actions>
       </branch>

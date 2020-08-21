@@ -1,6 +1,6 @@
 Started by timer
-[Wed Aug 12 17:26:00 GMT 2020] Starting branch indexing...
-[8mha:////4PYSFAYsA5E4HVrEGUkn3uWIeCEB4OyrX2msbQW5jTOJAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTx4638DwGcpZPIjgAAAA==[0mConnecting to https://api.github.com using prabha6kar/****** (GitHub credentials)
+[Thu Aug 20 03:00:00 GMT 2020] Starting branch indexing...
+[8mha:////4JO22dn6nyNIlEYiaj5tahNwOPgdiPZgW3J226VL+is2AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHQJ53mxfQAr0MP6jgAAAA==[0mConnecting to https://api.github.com using prabha6kar/****** (GitHub credentials)
 Examining [8mha:////4N0ZvDebmEx7aQ+nF/9mFaeVNohcIgIZ190Np6zGieMTAAAArx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKWHQzygpKSi20tdPzyzJKE0C6srVr0pNzClJTc7ISUzSd/aMD07MLchJjQ+oLMnIzwMARVjN87QAAAA=[0mzealtechlab/CI_Sample_Python
 
   Checking branches...
@@ -31,7 +31,7 @@ No changes detected: Feature_03_base_flask_blog_pytest_sonar_dockdeliver (still 
     Checking branch [8mha:////4AnW7LnF4ygG0gI0WFbqUY6Sz2pAa+qw3LPSNf7zfxY8AAAA1h+LCAAAAAAAAP9djkFOAkEQRcsxeACWxitAuyAsNKxIjCTEmHCASjUW3SNFd6e72sx4DK8BGw/hcbyDQ9j5N/9v3ss//cKoZLjz9a3EMN3GUKLw9LlPnKUN+5eoPF8cvxdf6aeBZgU3wsGpX8N1zaIwXr/TBxmh4MxGcxvcY5fh9p9ueemzDC65agC6NIyJgvWqqTwY41r11Q7UwXwyifLWC1mzXOGGDkkYX3v1MRjNzOaJSWtmvJ+hpcK4Eyp7tBIdpl65KA4PKGPgrpY/E7eT+ecAAAA=[0mFeature_04_base_flask_blog_pytest_sonar_nexus
       ‘Jenkinsfile’ found
     Met criteria
-No changes detected: Feature_04_base_flask_blog_pytest_sonar_nexus (still at 98005645bd8c303c4e19cc640850a87e3652e961)
+No changes detected: Feature_04_base_flask_blog_pytest_sonar_nexus (still at 81a06e3ac3e4aeaff153445ecfd2437629cb1076)
 
     Checking branch [8mha:////4MHXvcBfiqmfMldhF/cAbU8WEQ657Sj3XUmon9c7QkvfAAAAwx+LCAAAAAAAAP9djEEOAUEQRcsIB7DEGfTOglhJxCQTkThAp4bSPZTuTneN4BiuwcYhHMcdEDtv89/mv/sLWilC39ab5N1g7V3yTIP5OVDkyu0XXmg4uT0m1/DMIMuhzeSM2AKadWSBTrHDIypGZ9RKYuXM+BSh+5eb/vYbgx+NDOAUPtITWFqRkEZKmUpsXX5eB3UhZKG1ZSzVNNcrPAQmvTyL9U5JJFIzQqkj6RIT6S1j2uuSvdEYwhusI6x31QAAAA==[0mFeature_base_flask_blog_app
       ‘Jenkinsfile’ not found
@@ -49,5 +49,5 @@ No changes detected: Feature_04_base_flask_blog_pytest_sonar_nexus (still at 980
 
 Finished examining zealtechlab/CI_Sample_Python
 
-[Wed Aug 12 17:26:08 GMT 2020] Finished branch indexing. Indexing took 8 sec
+[Thu Aug 20 03:00:09 GMT 2020] Finished branch indexing. Indexing took 9.2 sec
 Finished: SUCCESS

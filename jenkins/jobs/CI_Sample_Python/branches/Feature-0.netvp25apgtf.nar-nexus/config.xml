@@ -14,7 +14,7 @@
   <keepDependencies>false</keepDependencies>
   <properties>
     <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.22">
-      <branch plugin="branch-api@2.5.8">
+      <branch plugin="branch-api@2.5.9">
         <sourceId>8e48809a-116f-4947-a3d0-1d32cdc04295</sourceId>
         <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.8.3">
           <name>Feature_04_base_flask_blog_pytest_sonar_nexus</name>

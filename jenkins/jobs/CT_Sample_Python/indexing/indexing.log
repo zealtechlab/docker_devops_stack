@@ -1,35 +1,31 @@
 Started by timer
-[Sun Aug 16 02:51:00 GMT 2020] Starting branch indexing...
-[8mha:////4MPyMQvGX1ewqOx132JsPwT6kRYzszhlGICZkcArxp8iAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV92MIgAJe1sNjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
-[8mha:////4Ibx0EUuAdGBme4mKvNAxzQK3U4Q4UrVWrvnTRQzTuKVAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV91sZQCoSRo6jgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 59 remaining (6 under budget). Next quota of 60 in 59 min
+[Thu Aug 20 02:58:00 GMT 2020] Starting branch indexing...
+[8mha:////4PTVpqmglUrk4Mia3zFEuXIUu5grlJycevqCzKfrjhs5AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHQJ51mHEADx9XlVjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+[8mha:////4Db5NJVL/TufmcVsTmiw0Emn1yyHrKb6J9V0Gp2S71soAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHQJ51mnGABBH5RpjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 50 remaining (0 under budget). Next quota of 60 in 55 min
 Examining [8mha:////4KMemZdD0jtsz7PHlXXK9pEnyZHmBz+HUO35KQgDunmwAAAArx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKWHQzygpKSi20tdPzyzJKE0C6srVr0pNzClJTc7ISUzSdw6JD07MLchJjQ+oLMnIzwMABrWhS7QAAAA=[0mzealtechlab/CT_Sample_Python
 
   Checking branches...
-[8mha:////4GiAdJMDXbJ2QbGA4tSIsB85DmrFWo/7xykfDJ4427sOAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV90cQQDvjoy9jgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 58 remaining (5 under budget). Next quota of 60 in 59 min
-
-  Getting remote branches...
-
-    Checking branch [8mha:////4JgRBOs+Da8DB5mXXFzFm7OddjGCUcov+pTC9xJy/KuuAAAAth+LCAAAAAAAAP9djDEOgkAQRUeMHMDSeAa2s5BY0WhCjAn2ZMEJiw67m93BgMfwGtp4CI/jHcTQ+Zr/mv+eH5h5B0vVnrzRUWm0N4TRtrfoqNaXvWFcbR6vzd2+Awh2EBLqilUK09YRwzw9y6sUJHUlMna1ruLOweIvl4z7i8HIJADo7CAhQ6yYrV8LUdWs2mJ4NeKGkhhLRbIQyTHPZGMJ80PPymjBDlE00jO6LwuNypnAAAAA[0mmaster
-[8mha:////4MiwQzxBu5V+2xDCufXh/keGWkHZd+9kIamukoq4NBsHAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV93cFwAW9fZgjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 58 remaining (5 under budget). Next quota of 60 in 59 min
-
-  Getting remote pull requests...
-      ‘Jenkinsfile’ not found
-    Does not meet criteria
-[8mha:////4EU4HjGUuzLUYG6EZiL1VdZQdaPEb0nGYCORUQMq1H4VAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV92CHwBuiS2CjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 58 remaining (5 under budget). Next quota of 60 in 59 min
-
-    Checking branch [8mha:////4LpgQ4k3CBQiMc/ues7b/eNoIUGKzh7b+5mYcGVZbYzrAAAA0B+LCAAAAAAAAP9djDFuAjEQRYeN4AApUUpqTJUiiAoJJRJCSNBQWYYd1t6dHVv2LAKOwTWg4RAchzsERMdr/mv+u9yhnSJ82SZPnvsbz8kT9n8PASM5rmZe8Ht0vo5O4ZZB9gcdQi7ETuGjiSTwOS3NzigyXKiFRMfFcB+h+5Ybv/YZgxetDGAfHtITWFmRkH6UKpzYZv141eqIhgQ3lsxajZd6YepAqOcHsZ6VREQ1QSNNRD0Y6C2ZVOnkctRljYJRl8iV4/QPNNzozN4AAAA=[0mFeature_00_flask_side_jmeter_jenkins
-      ‘Jenkinsfile’ found
-    Met criteria
-No changes detected: Feature_00_flask_side_jmeter_jenkins (still at ef51a33de5c927d02b9f71cdc45d71c8841d2404)
-[8mha:////4PPp0V9/KYdUShyqwFViAFK1uMkp8ddiv0hcxExD8GwhAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTxV93iEABuNWB2jgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 58 remaining (5 under budget). Next quota of 60 in 59 min
-
-  2 branches were processed
-
-  Checking pull-requests...
-
-  0 pull requests were processed
-
-Finished examining zealtechlab/CT_Sample_Python
-
-[Sun Aug 16 02:51:03 GMT 2020] Finished branch indexing. Indexing took 2.9 sec
-Finished: SUCCESS
+[8mha:////4JhhyiC08QsQ093CXJRSysDujMF0JNJrwif3CZHlh63TAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHQJ51mnBwDm4EOrjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 49 remaining (1 over budget). Next quota of 60 in 55 min. Sleeping for 5 min 2 sec.
+[8mha:////4H7WXNcMRTNzXJAhpaS67Sv2OkEFRsApY20xmcmGLuFCAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHQJ51mnhwBw0ETcjgAAAA==[0mJenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+ERROR: [Thu Aug 20 03:00:55 GMT 2020] Could not fetch branches from source 54e8f40c-e360-4e7a-8679-2798f5bf8380
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker.waitUntilRateLimit(ApiRateLimitChecker.java:162)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker.access$400(ApiRateLimitChecker.java:13)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker$1.checkApiRateLimit(ApiRateLimitChecker.java:76)
+	at org.jenkinsci.plugins.github_branch_source.Connector.checkApiRateLimit(Connector.java:610)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSourceRequest.checkApiRateLimit(GitHubSCMSourceRequest.java:399)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSource$LazyBranches.create(GitHubSCMSource.java:2467)
+	at org.jenkinsci.plugins.github_branch_source.LazyIterable.iterator(LazyIterable.java:57)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrieve(GitHubSCMSource.java:994)
+	at jenkins.scm.api.SCMSource._retrieve(SCMSource.java:373)
+	at jenkins.scm.api.SCMSource.fetch(SCMSource.java:283)
+	at jenkins.branch.MultiBranchProject.computeChildren(MultiBranchProject.java:641)
+	at com.cloudbees.hudson.plugins.folder.computed.ComputedFolder.updateChildren(ComputedFolder.java:278)
+	at com.cloudbees.hudson.plugins.folder.computed.FolderComputation.run(FolderComputation.java:165)
+	at jenkins.branch.MultiBranchProject$BranchIndexing.run(MultiBranchProject.java:1032)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+[Thu Aug 20 03:00:55 GMT 2020] Finished branch indexing. Indexing took 2 min 55 sec
+Aborted
+Finished: ABORTED

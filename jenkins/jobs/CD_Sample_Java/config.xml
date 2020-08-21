@@ -1,41 +1,16 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.22">
   <actions/>
-  <description>Sample Java Project for the CI demo</description>
-  <displayName>CI_Sample_Java</displayName>
+  <description>Sample Python Project to demo CD</description>
+  <displayName>CD_Sample_Java</displayName>
   <properties>
-    <com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty plugin="cloudbees-folder@6.14">
-      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
-        <entry>
-          <com.cloudbees.plugins.credentials.domains.Domain plugin="credentials@2.3.12">
-            <specifications/>
-          </com.cloudbees.plugins.credentials.domains.Domain>
-          <java.util.concurrent.CopyOnWriteArrayList>
-            <org.jenkinsci.plugins.plaincredentials.impl.StringCredentialsImpl plugin="plain-credentials@1.7">
-              <id>1</id>
-              <description>GitHub_PAT</description>
-              <secret>{AQAAABAAAABwEI6+FI4YDBBr0Ue0GZNr45V6z393ISWr1fCtjEQ32U+RWSnG9cd4pTGysi23JzKjPPuwj/A/DZQ8deYIS6BSETu7Yfu5TlblF5hiynbS3fqYRK4Ul7fl29Wrl1jlmloXAajPqdDev9bR4vBO9aOZClWCICzDhUAxpQaWtV1MxHU=}</secret>
-            </org.jenkinsci.plugins.plaincredentials.impl.StringCredentialsImpl>
-            <com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl plugin="credentials@2.3.12">
-              <id>2</id>
-              <description>GitHub credentials</description>
-              <username>prabha6kar</username>
-              <password>{AQAAABAAAABAdQLx78jXkV3px1h6EsSSSCHdYBSSQjaAK7Q9rfZKeURBqqEvEy+4qGJkB5jXnICDhFee3SNEvW/d3GKHdRGzFegJ9BjjQ0LAfAnWvVyut1k=}</password>
-            </com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>
-            <com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl plugin="credentials@2.3.12">
-              <id>5</id>
-              <description>GitHub credentials</description>
-              <username>prabha6kar</username>
-              <password>{AQAAABAAAAAQj8+/UjAR+4LoFKd8hT7Axw8788+Ef/xelTXBuxaynWw=}</password>
-            </com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>
-          </java.util.concurrent.CopyOnWriteArrayList>
-        </entry>
-      </domainCredentialsMap>
-    </com.cloudbees.hudson.plugins.folder.properties.FolderCredentialsProvider_-FolderCredentialsProperty>
     <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@1.24">
       <dockerLabel></dockerLabel>
       <registry plugin="docker-commons@1.17"/>
     </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
+    <org.csanchez.jenkins.plugins.kubernetes.KubernetesFolderProperty plugin="kubernetes@1.26.4">
+      <permittedClouds/>
+    </org.csanchez.jenkins.plugins.kubernetes.KubernetesFolderProperty>
     <org.jenkinsci.plugins.pipeline.maven.MavenConfigFolderOverrideProperty plugin="pipeline-maven@3.8.3">
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
@@ -60,21 +35,20 @@
   </orphanedItemStrategy>
   <triggers>
     <com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger plugin="cloudbees-folder@6.14">
-      <spec>H/5 * * * *</spec>
-      <interval>1800000</interval>
+      <spec>* * * * *</spec>
+      <interval>120000</interval>
     </com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger>
   </triggers>
-  <disabled>true</disabled>
+  <disabled>false</disabled>
   <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.5.9">
     <data>
       <jenkins.branch.BranchSource>
         <source class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.8.3">
-          <id>e27c4a7e-46ca-490c-8bb0-8afea1115660</id>
+          <id>2b6e6f8f-a2a8-4632-9766-99e62ec2d6d9</id>
           <apiUri>https://api.github.com</apiUri>
-          <credentialsId>5</credentialsId>
           <repoOwner>zealtechlab</repoOwner>
-          <repository>CI_Sample_Java</repository>
-          <repositoryUrl>https://github.com/zealtechlab/CI_Sample_Java.git</repositoryUrl>
+          <repository>CD_Sample_Java</repository>
+          <repositoryUrl>https://github.com/zealtechlab/CD_Sample_Java.git</repositoryUrl>
           <traits>
             <org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
               <strategyId>1</strategyId>
@@ -88,9 +62,8 @@
             </org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
           </traits>
         </source>
-        <strategy class="jenkins.branch.NamedExceptionsBranchPropertyStrategy">
-          <defaultProperties class="empty-list"/>
-          <namedExceptions class="empty-list"/>
+        <strategy class="jenkins.branch.DefaultBranchPropertyStrategy">
+          <properties class="empty-list"/>
         </strategy>
       </jenkins.branch.BranchSource>
     </data>
