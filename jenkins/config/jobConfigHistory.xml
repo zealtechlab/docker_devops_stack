@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.jobConfigHistory.JobConfigHistory plugin="jobConfigHistory@2.26">
+  <historyRootDir></historyRootDir>
+  <excludedUsers></excludedUsers>
+  <skipDuplicateHistory>true</skipDuplicateHistory>
+  <excludePattern>queue\.xml|nodeMonitors\.xml|UpdateCenter\.xml|global-build-stats|LockableResourcesManager\.xml|MilestoneStep\.xml</excludePattern>
+  <saveModuleConfiguration>false</saveModuleConfiguration>
+  <showBuildBadges>always</showBuildBadges>
+  <showChangeReasonCommentWindow>true</showChangeReasonCommentWindow>
+</hudson.plugins.jobConfigHistory.JobConfigHistory>

@@ -1,12 +1,12 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.72">
-  <defaultSuffix></defaultSuffix>
+<hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.75">
+  <defaultSuffix>ZTL_DEVOPS</defaultSuffix>
   <mailAccount>
     <address>admin@zealtechlab.co.in</address>
-    <smtpHost></smtpHost>
-    <smtpPort>25</smtpPort>
-    <smtpUsername></smtpUsername>
-    <smtpPassword>{AQAAABAAAAAQZw809Tr6JUD5z63GLzQ+v9uaFAFgTdAz2VKe8U2Vlak=}</smtpPassword>
+    <smtpHost>mail.zealtechlab.co.in</smtpHost>
+    <smtpPort>587</smtpPort>
+    <smtpUsername>prabhakaran@zealtechlab.co.in</smtpUsername>
+    <smtpPassword>{AQAAABAAAAAQkLs9DfjrE85CBd0Kj3lPxlC2pqfzvkZUPuMjgrvn4A8=}</smtpPassword>
     <useSsl>false</useSsl>
     <advProperties></advProperties>
     <defaultAccount>true</defaultAccount>

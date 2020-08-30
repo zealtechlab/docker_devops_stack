@@ -1,0 +1,11 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.slack.SlackNotifier_-DescriptorImpl plugin="slack@2.40">
+  <baseUrl></baseUrl>
+  <teamDomain>zealtechlab</teamDomain>
+  <tokenCredentialId>slack_token</tokenCredentialId>
+  <botUser>true</botUser>
+  <sendAsText>false</sendAsText>
+  <iconEmoji></iconEmoji>
+  <username></username>
+  <room>#ztl-devops</room>
+</jenkins.plugins.slack.SlackNotifier_-DescriptorImpl>

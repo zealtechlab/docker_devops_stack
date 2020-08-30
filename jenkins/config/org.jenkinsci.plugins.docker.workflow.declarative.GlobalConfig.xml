@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.docker.workflow.declarative.GlobalConfig plugin="docker-workflow@1.24">
+  <dockerLabel></dockerLabel>
+  <registry plugin="docker-commons@1.17">
+    <url>http://docker_registry:15000</url>
+  </registry>
+</org.jenkinsci.plugins.docker.workflow.declarative.GlobalConfig>

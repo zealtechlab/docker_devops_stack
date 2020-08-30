@@ -9,7 +9,7 @@
   <throwOnCapabilityNotPresent>false</throwOnCapabilityNotPresent>
   <hubLogLevel>INFO</hubLogLevel>
   <hostnameResolver class="hudson.plugins.selenium.configuration.global.hostname.StaticHostnameResolver">
-    <hostname>seleniumhub</hostname>
+    <hostname>0.0.0.0</hostname>
   </hostnameResolver>
   <configurations/>
 </hudson.plugins.selenium.PluginImpl>

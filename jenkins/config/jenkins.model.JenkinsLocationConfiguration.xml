@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <jenkins.model.JenkinsLocationConfiguration>
   <adminAddress>admin@zealtechlab.co.in</adminAddress>
-  <jenkinsUrl>http://jenkins:8080/</jenkinsUrl>
+  <jenkinsUrl>http://jenkins:28080/</jenkinsUrl>
 </jenkins.model.JenkinsLocationConfiguration>
