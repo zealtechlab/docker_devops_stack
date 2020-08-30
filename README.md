@@ -24,12 +24,14 @@
 
 ## The result of the compose is multi-fold
 
-- Build Jenkins with Java8,Maven 3, Nginx Images
-- Build Nexus version 2.14.18-01 and configure with a jboss repo
-- Build Sonar version 7.0 and configure various sonar plugins
+- Build docker registry (local)
+- Build docker dind (docker in docker)
+- Build Jenkins with Java8, Maven 3, Docker, Selenium
+- Build Nexus version 3
+- Build Sonar latest version and configure various sonar plugins
 - Start the respective containers with port mapping
 - Mount docker volumes for persisting the changes done at container level
-- Configure nginx reverse-proxy with urls relative to localhost
+- Build, Setup and Configure nginx reverse-proxy with urls relative to localhost
 
 ## CI Tools Demo
 
